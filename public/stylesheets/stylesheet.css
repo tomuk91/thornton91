@@ -1,0 +1,960 @@
+img {
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+body {
+    background-color:rgba(243, 241, 239, 1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#message {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+.pagination {
+    font-size: 20px;
+    color: red;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.pagination::hover {
+    color: orangered;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Helvetica;
+}
+
+#headings {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: overline;
+    text-align: center;
+    padding: 30px;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 2px;
+    
+}
+
+.btn {
+    box-shadow: 0px 10px 14px -7px #00ddff;
+	background:linear-gradient(to bottom, #ff0202 5%, #fd7200 100%);
+	background-color:#0989de;
+	border-radius:8px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding: 10px 20px;
+	text-decoration:none;
+    color: white;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #080808 5%, #0989de 100%);
+	background-color:#080808;
+    color: white;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.errors {
+    width: 500px;
+    height: auto;
+    color: red;
+    border: 2px solid grey;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 25px;
+}
+
+
+/*************** || NAVIGATION || *****************/
+
+nav {
+    height: 5em;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > li {
+    margin-right: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    text-decoration: none;
+}
+
+nav > li:hover {
+    cursor: pointer;
+    color: rgba(9,9,121,1);
+    font-weight: bold;
+}
+
+
+nav h1 {
+    margin-right: auto;
+    font-size: 38px;
+    margin-left: 60px;
+    
+}
+
+
+/*************** || HOMEPAGE|| *****************/
+
+.intro {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+    "welcome register";
+    height: 350px;
+    border: 10px solid transparent;
+    background: rgb(112,112,112);
+    background: linear-gradient(351deg, rgba(112,112,112,0.165703781512605) 0%, rgba(7,42,232,0.6026785714285714) 100%);
+}
+
+.welcome {
+    grid-area: welcome;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    border-right: 1px dotted white;
+}
+
+.register {
+    grid-area: register;
+    font-size: 15px;
+    display: flex;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.register .btn {
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.welcome_text {
+    line-height: 1.0;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    margin-left: 25rem;
+}
+
+.reg_text {
+    flex-direction: column;
+    line-height: 1.2;
+    padding: 40px;
+    color: white;
+}
+
+
+.intro p {
+    color: black;
+}
+
+.intro img {
+    opacity: 0.3;
+    grid-area: welcome;
+    border: none;
+    height: 100%;
+    align-self: center;
+}
+
+/*************** || HOMEPAGE BANNER|| *****************/
+ .banner {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+    background: rgb(112,112,112);
+    background: linear-gradient(300deg, rgba(255, 255, 255, 0.166) 0%, rgba(0, 38, 255, 0.603) 100%);
+     width: auto;
+     height: 300px;
+     border: 10px solid transparent;
+     margin: 20px 0;
+ }
+
+ .banner_info {
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 80%;
+    display: flex;
+    width: 50%;
+ }
+
+ .banner_left {
+     height: auto;
+ }
+
+ .banner_right {
+     height: auto;
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 2;
+ }
+
+ .banner_left img {
+     border: none;
+     height: 90px;
+     width: 300px;
+ }
+
+ .banner_left h1 {
+     padding-top: 20px;
+     font-size: 60px;
+ }
+
+ /*************** || CATEGORY POSTS|| *****************/
+
+ .cat_post_boxes {
+    line-height: 1;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+    flex-direction: column;
+    background-color: rgba(236, 236, 236, 1);
+    width: 200px;
+    border-radius: 0 0 10px 10px;
+    height: 200;
+}
+
+.cat_posts img {
+    border: none;
+}
+
+.cat_posts {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    min-width: 90%;
+    line-height: 1;
+    padding: 4px;
+}
+
+.cat_posts h1, h2, h3, h4, p {
+    padding: 8px;
+}
+
+.cat_posts h1 {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.cat_posts p {
+    font-size: 10px;
+    padding: 5px;
+}
+/*************** || HOMEPAGE POSTS|| *****************/
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    min-width: 90%;
+    line-height: 1;
+}
+
+.post_boxes {
+    line-height: 1;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+    flex-direction: column;
+    background-color: rgba(236, 236, 236, 1);
+    width: 400px;
+    border-radius: 0 0 10px 10px;
+    height: auto;
+}
+
+.post_boxes img {
+    border: none;
+    height: 45%;
+    border-bottom: 2px solid white;
+
+}
+
+.posts h1, h2, h3, h4, p {
+    padding: 15px;
+}
+
+.posts h1 {
+    font-size: 20px;
+}
+
+.posts h4 {
+    font-size: 15px;
+}
+
+.post_boxes a {
+    color: white;
+    text-shadow: 2px 2px 15px orangered;
+}
+
+.post_boxes a:hover {
+    text-shadow: 2px 2px 15px red;
+    text-transform: uppercase;
+
+}
+
+
+/*************** || BUTTONS || *****************/
+.dropbtn {
+    background:linear-gradient(to bottom, #ff0202 5%, #fd7200 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background:linear-gradient(to bottom, #080808 5%, #0989de 100%);
+	background-color:#080808;
+  }
+
+/*************** || ADMINS PAGE & TABLE|| *****************/
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "sidebar tables";
+  
+}
+
+.quick_stats {
+    template-area: sidebar;
+}
+
+.tables {
+    template-area: tables;
+}
+
+.table_wrapper {
+    align-self: center;
+    margin: 10px 10px;
+    background-color: aliceblue;
+    width: 1000px;
+    border: 2px solid silver;
+    height: 100px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.backend_table {
+   height: 100%;
+}
+
+
+.table_wrapper th {
+    padding: 15px;
+    background-color: #0fc4d1;
+}
+
+.table_wrapper td:nth-child(even) {
+    background: #a5a5a5;
+}
+
+.table_wrapper
+th,
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.table_wrapper h1 {
+    text-align: center;
+}
+
+
+.table h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+.counter h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+.table_wrapper a {
+    color: red;
+}
+
+caption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.container {
+    margin: 20px 20px;
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+
+}
+
+.box {
+    margin: 0 auto;
+    text-align: center;
+    background: grey;
+    width: 150px;
+    margin: 20px;
+    border-radius:10px;
+    border: 2px solid silver;  
+    line-height: 1.6;
+}
+
+.box h1 {
+    color: white;
+}
+
+/*************** || SHOW POSTS || *****************/
+
+.post_container {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "display_post";
+    width: 100%;
+    
+}
+
+.display_post {
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-area: display_post;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+
+.display_post h1 {
+    background-color: lightgray;
+    padding: 0px 10px;
+    border-radius: 0 0 20px 20px;
+    border: 2px solid silver;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 4px 4px 9px black;
+    width: 80%;
+    text-align: center;
+    margin-left: 6.8rem;
+}
+
+.display_post h2, h3 {
+    margin: auto;
+    font-size: 20px;
+}
+
+.display_post p {
+    margin: 0 auto;
+    width: 70ch;
+    font-size: 20px;
+}
+
+.display_post img {
+    border-bottom: 5px solid silver;
+    margin: 0 auto;
+    height: auto;
+    width: 70%;
+}
+
+.comments_table {
+    text-align: center;
+    font-size: 15px;
+    width: 70%;
+    padding: 10px;
+    margin: 40px auto;
+}
+
+.comments_table td {
+    font-size: 15px;
+    padding: 10px;
+    line-height: 2.2rem;
+    border: 1px solid silver;
+}
+
+.comments_table tr {
+    border-right: 4px solid black;
+}
+
+.comments_table th {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.comments_table caption {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.first_column {
+    width: 10%;
+}
+
+.add_comment {
+    display: block;
+    margin: 0 20rem;
+}
+
+.add_comment textarea {
+    width: 90%;
+    border: 4px solid silver;
+    font-size: 20px;
+}
+
+.add_comment dt {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add_comment .btn {
+    display: inherit;
+}
+
+/*************** || FORMS || *****************/
+
+.form_container {
+    padding: 20px;
+}
+
+.form_container h2, p {
+    text-align: center;
+}
+
+.form_template {
+    width: 500px;
+    height: 100%;
+    background: rgb(112,112,112);
+    background: linear-gradient(351deg, rgba(112,112,112,0.165703781512605) 0%, rgba(7,42,232,0.6026785714285714) 100%);
+    border: 2px solid silver;  
+    border-radius:10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+} 
+
+.form_template dt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.form_template #content {
+    border: 2px solid silver;  
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    width: 80%;
+    height: 8rem;
+    text-align: start;
+}
+
+.form_template 
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="email"] {
+    text-align: center;
+    font-size: 20px;
+    min-width: 90%;
+    height: 2rem;
+    border-radius: 10px;
+    border: 2px solid silver;  
+}
+
+.form_template textarea {
+    font-size: 20px;
+    height: 10rem;
+    border-radius: 10px;
+    border: 2px solid silver;  
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form_template option, select {
+    text-align: center;
+    font-size: 20px;
+    height: 2rem;
+    border-radius: 10px;
+    border: 2px solid silver;  
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form_template input[type="radio"] {
+    color: white;
+}
+
+.submit {
+    text-align: center;
+    font-family: Hack, monospace;
+    background: grey;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1.5rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+/*************** || FOOTER|| *****************/
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*************** || MEDIA QUERIES|| *****************/
+
+@media screen and (max-width: 480px) {
+    nav h1 {
+        display: none;
+    }
+
+    nav {
+        height: 3em;
+        
+    }
+    
+    nav > li {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .register {
+        display: none;
+    }
+
+    .welcome {
+        min-width: 90%;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .intro img {
+    margin: auto;
+    width: auto;
+    height: 5rem;
+    margin-top: 250px;
+    }
+
+    .welcome_text {
+        padding: 0;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        height: 80%;
+        max-width: 80%;
+    }
+    
+    .post_boxes {
+        margin: 20px 0;
+        border: 2px solid black;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0 0 20px 20px;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .post_boxes img {
+    height: 200px;
+    height: auto;
+    }
+
+    .post_boxes h1 {
+        font-size: 19px;
+    }
+
+    .post_boxes h2, h3 {
+        font-size: 10px;
+    }
+
+    .post_boxes p {
+        font-size: 15px;
+    }
+
+    .posts h1, h2 h3, h4 p {
+        line-height: 1;
+
+    }
+
+    .form_template {
+        width: auto;
+        height: auto;
+    }
+
+
+    .submit {
+        font-family: Hack, monospace;
+        background: silver;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1.5em;
+        padding: 1rem;
+        border: 0;
+        transition: all 0.5s;
+        border-radius: 10px;
+        width: auto;
+        position: relative;
+    }
+
+  
+    .banner_info {
+        flex-direction: column;
+     }
+
+     .banner {
+         font-size: 20px;
+         width: auto;
+     }
+
+     .banner_info {
+         justify-content: none;
+         font-size: 20px;
+     }
+
+     .banner_left {
+         height: auto;
+     }
+    
+     .banner_right {
+        line-height: 1.3;
+         height: auto;
+         font-size: 14px;
+         padding: 4px 0;
+         margin-left: 20px;
+     }
+
+     .banner_right li {
+         padding: 6px;
+     }
+    
+     .banner_left img {
+         text-align: center;
+         display: none; 
+     }
+    
+     .banner_left h1 {
+         padding-top: 20px;
+         font-size: 30px;
+         text-align: center;
+     }
+
+
+     .footer_text {
+         font-size: 20px;
+     }
+
+     .display_post h1 {
+         font-size: 30px;
+         text-align: center;
+         margin-left: 25px;
+     }
+
+     .display_post img {
+         padding: 0;
+         width: 100%;
+     }
+
+     .display_post h3 {
+         font-size: 18px;
+     }
+
+     .display_post p {
+         width: auto;
+         font-size: 15px;
+         line-height: 1.4;
+     }
+
+     .comments_table {
+         font-size: 15px;
+     }
+
+     .comments_table td {
+         font-size: 13px;
+     }
+
+     .comments_table caption {
+         font-size: 20px;
+     }
+
+     .add_comment {
+        margin: 60px;
+        width: 310px;
+     }
+
+     .add_comment dt {
+         font-size: 15px;
+     }
+
+     .add_comment .btn {
+        width: auto;
+        font-size: 13px;
+     }
+
+     nav > li {
+         margin-right: 0;
+         padding: 0;
+         margin: 0;
+     }
+
+     nav {
+         justify-content: space-evenly;
+     }
+
+     .cat_posts {
+         width: 100%;
+     }
+
+   
+}
+
+@media only screen  and (min-width : 1224px) {
+    .welcome_text {
+        font-size: 15px;
+    }
+}
+    
+ @media only screen  and (min-width : 1824px) {
+    .welcome_text {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
